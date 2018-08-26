@@ -5,7 +5,7 @@ This project is part of the Udacity Driving Car Engineer Nanodegree Program - Te
 The main goal of this project was to navigate a simulated vehicle along a freeway in a safe manner, while maintaining comfort for vehicle occupants, yet maintaining good efficient forward progress.
 
 ## Approach
-While the general approach seemed simple, generate a series of waypoints in front of the car for the car to follow. To give an example as to how this works, if we laid a series of waypoints down the middle of one of the lanes on the freeway at constant spacing then the car would drive at a constant velocity. If we increase, or decrease the distance between each point as we move down the road, the car will accelerate or decelerate. Similarly, if we move the points from one lane to another, the car will turn into the new lane.
+While the general approach seemed simple, generate a series of waypoints in front of the car for the car to follow, in practice, it was more complicated than first perceived. To give an example as to how this works, if we laid a series of waypoints down the middle of one of the lanes on the freeway at constant spacing then the car would drive at a constant velocity. If we increase, or decrease the distance between each point as we move down the road, the car will accelerate or decelerate. Similarly, if we move the points from one lane to another, the car will turn into the new lane.
 
 ### Comfort
 As you can imagine, if we space out the waypoints too far, in either the x, or y directions, we end up making the car accelerate or decelerate too quickly, or shaking the car to violently from one side to the other causing a bad experience for the passengers. We refer to this excessive acceleration(s) in one direction or the other as 'jerk'.
