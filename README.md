@@ -1,8 +1,12 @@
+[Main_Image]: ./path_planning.png
+
 # CarND-Path-Planning-Project
 This project is part of the Udacity Driving Car Engineer Nanodegree Program - Term 3
 
 ## Overview
 The main goal of this project was to navigate a simulated vehicle along a freeway in a safe manner, while maintaining comfort for vehicle occupants, yet maintaining good efficient forward progress.
+
+![alt text][Main_Image]
 
 ## Approach
 While the general approach seemed simple, generate a series of waypoints in front of the car for the car to follow, in practice, it was more complicated than first perceived. To give an example as to how this works, if we laid a series of waypoints down the middle of one of the lanes on the freeway at constant spacing then the car would drive at a constant velocity. If we increase, or decrease the distance between each point as we move down the road, the car will accelerate or decelerate. Similarly, if we move the points from one lane to another, the car will turn into the new lane.
